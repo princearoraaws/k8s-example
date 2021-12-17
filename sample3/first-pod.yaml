@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: customerorderweb-v1
+  labels:
+    app: customerorderweb
+    release: "1"   
+spec:
+  containers:
+    - name: customerorderweb
+      image: customerorderweb:1.0
+
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: customerorderweb-v2
+  labels:
+    app: customerorderweb
+    release: "2"   
+spec:
+  containers:
+    - name: customerorderweb
+      image: customerorderweb:2.0
