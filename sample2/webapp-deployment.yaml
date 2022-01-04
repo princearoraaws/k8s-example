@@ -1,10 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webapp-deployment
+  name: webapp
 spec:
   minReadySeconds: 30
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: webapp
